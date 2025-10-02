@@ -11,13 +11,75 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1600&auto=format&fit=crop" />
   <meta name="format-detection" content="telephone=no" />
+
+  <!-- SEO additions -->
+  <link rel="canonical" href="https://<your-pages-url>/">
+  <meta property="og:url" content="https://<your-pages-url>/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Malayali GI Specialist – Karama Dubai | Kochi Surgical Link">
+  <meta name="twitter:description" content="Monthly GI consults in Al Karama. WhatsApp to book. Kochi endoscopy/surgery when needed.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1600&auto=format&fit=crop">
+  <meta http-equiv="content-language" content="en, ml">
+  <link rel="icon" href="/favicon.ico">
+
+  <!-- Structured Data: MedicalClinic + Physician -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"MedicalClinic",
+    "name":"Right Health Family Clinic – Al Karama (GI Specialist Visits)",
+    "medicalSpecialty":"Gastroenterology",
+    "address":{"@type":"PostalAddress","addressLocality":"Dubai","addressRegion":"Dubai","addressCountry":"AE"},
+    "areaServed":["Dubai","Sharjah"],
+    "url":"https://<your-pages-url>/",
+    "contactPoint":{"@type":"ContactPoint","contactType":"appointment","telephone":"+971563280583","availableLanguage":["en","ml"]},
+    "physician":{
+      "@type":"Physician",
+      "name":"Gastrointestinal Surgeon (Visiting Consultant)",
+      "medicalSpecialty":"Gastroenterology",
+      "affiliation":{ "@type":"Hospital", "name":"V.G. Saraf Memorial Hospital, Kochi", "address":{"@type":"PostalAddress","addressLocality":"Kochi","addressRegion":"Kerala","addressCountry":"IN"} }
+    }
+  }
+  </script>
+
+  <!-- Structured Data: Event (update dates each visit) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Event",
+    "name":"GI Specialist Monthly Clinic – Al Karama",
+    "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus":"https://schema.org/EventScheduled",
+    "startDate":"2025-10-28T10:00:00+04:00",
+    "endDate":"2025-10-30T18:00:00+04:00",
+    "location":{ "@type":"Place", "name":"Right Health Family Clinic, Al Karama", "address":{"@type":"PostalAddress","addressLocality":"Dubai","addressCountry":"AE"} },
+    "description":"Malayali GI specialist consults. Cash patients welcome. WhatsApp booking.",
+    "offers":{"@type":"Offer","priceCurrency":"AED","availability":"https://schema.org/InStock"}
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Do you accept cash payments in Karama?","acceptedAnswer":{"@type":"Answer","text":"Yes. Cash consults at Karama clinic with receipt provided."}},
+      {"@type":"Question","name":"Where are procedures done?","acceptedAnswer":{"@type":"Answer","text":"Advanced endoscopy and surgery are coordinated at V.G. Saraf Memorial Hospital, Kochi, after your Dubai consult."}},
+      {"@type":"Question","name":"How do I book?","acceptedAnswer":{"@type":"Answer","text":"Tap the WhatsApp button and send your name and preferred language (Malayalam/English)."}}
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    :root { --bg:#0b1220; --card:#0f1a33; --muted:#9fb0d1; --brand:#22c55e; --brand2:#16a34a; }
+    :root { --bg:#0b1220; --card:#0f1a33; --muted:#9fb0d1; --brand:#22c55e; --brand2:#16a34a; } 
+/* Saraf theme (light) */
+
     *{ box-sizing: border-box; }
-    body{ margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:var(--bg); color:#e5ecff; line-height:1.5; }
+    body{$1color:#e5ecff; line-height:1.5; }
     a{ color:inherit; text-decoration:none; }
     .container{ max-width:1040px; margin:0 auto; padding:20px; }
     header{ display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px 0; }
@@ -34,12 +96,12 @@
     .pill{ display:inline-block; background:rgba(34,197,94,.12); color:#8ff0b7; border:1px solid rgba(34,197,94,.3); font-weight:700; letter-spacing:.3px; padding:6px 10px; border-radius:999px; font-size:12px; }
     .grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
     .grid .card h3{ margin:8px 0 6px; }
-    .muted{ color:var(--muted); }
+    .muted{ color:#9fb0d1; }
     .list{ margin:8px 0; padding-left:18px; }
     .list li{ margin:6px 0; }
     .section{ padding:28px 0; }
     .split{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-    footer{ border-top:1px solid rgba(255,255,255,.08); margin-top:24px; padding:18px 0 40px; font-size:14px; color:var(--muted); }
+    footer{ border-top:1px solid var(--border); margin-top:24px; padding:18px 0 40px; font-size:14px; color:var(--muted); }
     .flag{ font-size:12px; opacity:.9; }
     .badge{ display:inline-block; background:#0f1a33; border:1px solid rgba(255,255,255,.08); padding:8px 10px; border-radius:10px; font-size:12px; }
     .lang{ font-size:14px; color:#b9c8e6; }
@@ -48,7 +110,15 @@
     .schedule .slot{ background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); padding:10px 12px; border-radius:12px; }
     .accent{ color:#a7f3d0; }
     @media (max-width: 900px){ .hero{ grid-template-columns:1fr; } .grid{ grid-template-columns:1fr; } .split{ grid-template-columns:1fr; } }
+    /* Accessibility: clear keyboard focus + link affordance */
+    a:focus{ outline:2px dashed #22c55e; outline-offset:3px; }
+    a:hover{ text-decoration: underline; }
+    .cta:hover{ text-decoration:none; filter: brightness(1.05); }
+    .cta:focus{ box-shadow:0 0 0 3px rgba(34,197,94,.35); } .grid{ grid-template-columns:1fr; } .split{ grid-template-columns:1fr; } }
   </style>
+  <!-- Dark-mode browser chrome + color scheme hints -->
+  <meta name="theme-color" content="#0b1220">
+  <meta name="color-scheme" content="dark light">
 </head>
 <body>
   <div class="container">
@@ -77,9 +147,9 @@
           <div>✅ Fastest: WhatsApp booking</div>
           <a class="cta" id="wa-cta" href="https://wa.me/971563280583?text=Hi%20Doctor%2C%20I%20want%20to%20book%20a%20GI%20consult%20in%20Al%20Karama.%20I%20saw%20your%20Dubai%20micro‑site.%20Name%3A%20%5BYour%20Name%5D%20%7C%20Language%3A%20Malayalam%2FEnglish" target="_blank" rel="noopener">💬 WhatsApp <small>(Dubai/Sharjah)</small></a>
         </div>
-        <p class="muted lang">മലയാളം സംസാരിക്കാം • WhatsApp വഴി സമയം ബുക്ക് ചെയ്യാം.</p>
+        <p class="muted lang" lang="ml">മലയാളം സംസാരിക്കാം • WhatsApp വഴി സമയം ബുക്ക് ചെയ്യാം.</p>
         <div class="schedule">
-          <div class="slot">Next Visit: <strong><span id="next-visit">Oct 28–30, 2025 • Fri–Sun • 10:00–18:00 GST</span></span></strong></div>
+          <div class="slot">Next Visit: <strong><span id="next-visit">Oct 28–30, 2025 • Fri–Sun • 10:00–18:00 GST</span></strong></div>
           <div class="slot">Location: <strong>Right Health Family Clinic, Al Karama</strong></div>
           <div class="slot">Consult Type: <strong>Cash • Receipt Provided</strong></div>
         </div>
@@ -130,8 +200,8 @@
         </ul>
       </div>
       <div class="card">
-        <h3>മലയാളത്തിൽ</h3>
-        <p>ദുബൈയിലെ <strong>Al Karama</strong>യിൽ മാസത്തിൽ ഒരിക്കൽ കണ്ടുമുട്ടാം. പരിശോധനകൾ/ശസ്ത്രക്രിയ ആവശ്യമായാൽ <strong>കൊച്ചി</strong>യിൽ വേഗത്തിൽ ക്രമപ്പെടുത്താം. WhatsApp വഴി സമയം ബുക്ക് ചെയ്യാം.</p>
+        <h3 id="ml-head" lang="ml">മലയാളത്തിൽ</h3>
+        <p lang="ml">ദുബൈയിലെ <strong>Al Karama</strong>യിൽ മാസത്തിൽ ഒരിക്കൽ കണ്ടുമുട്ടാം. പരിശോധനകൾ/ശസ്ത്രക്രിയ ആവശ്യമായാൽ <strong>കൊച്ചി</strong>യിൽ വേഗത്തിൽ ക്രമപ്പെടുത്താം. WhatsApp വഴി സമയം ബുക്ക് ചെയ്യാം.</p>
       </div>
     </section>
 
@@ -176,12 +246,13 @@
   </div>
 
   <script>
+    // Apply Saraf light theme by default
     // Auto-year
     document.getElementById('year').textContent = new Date().getFullYear();
     // UTM tagging for WhatsApp
     const wa = document.getElementById('wa-cta');
     const params = new URLSearchParams({ utm_source: 'microsite', utm_medium: 'bio', utm_campaign: 'dubai_karama_gi' });
-    wa.href += `&${params.toString()}`;
+    if (wa) wa.href += `&${params.toString()}`;
   </script>
 </body>
 </html>
