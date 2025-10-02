@@ -115,10 +115,15 @@
     a:hover{ text-decoration: underline; }
     .cta:hover{ text-decoration:none; filter: brightness(1.05); }
     .cta:focus{ box-shadow:0 0 0 3px rgba(34,197,94,.35); } .grid{ grid-template-columns:1fr; } .split{ grid-template-columns:1fr; } }
+    html{ background:#0b1220; }
+    body{ background:#0b1220; }
+    @supports (color-scheme: dark){ :root{ color-scheme: dark; } }
   </style>
   <!-- Dark-mode browser chrome + color scheme hints -->
   <meta name="theme-color" content="#0b1220">
-  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b1220">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#0b1220">
+  <meta name="color-scheme" content="dark">
 </head>
 <body>
   <div class="container">
