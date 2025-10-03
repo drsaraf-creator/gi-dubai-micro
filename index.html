@@ -3,261 +3,316 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Malayali GI Consultant – Karama Dubai | Kochi Surgical Care Link</title>
-  <meta name="description" content="Monthly GI specialist consultations at Right Health Family Clinic, Al Karama, Dubai. Malayalam/English. Cash patients welcome. WhatsApp to book. Seamless referral to Kochi for endoscopy & surgery." />
-  <meta name="keywords" content="Gastroenterologist Dubai Malayalam, Karama clinic GI, acid reflux, piles, gallbladder, endoscopy Dubai Malayali, Kochi surgery link" />
-  <meta property="og:title" content="Malayali GI Consultant – Karama Dubai" />
-  <meta property="og:description" content="Monthly GI consults in Al Karama. WhatsApp to book. Seamless endoscopy/surgery in Kochi when needed." />
+  <title>GI & Surgical Care in Kerala — Seamless from Dubai | V.G. Saraf Memorial Hospital</title>
+  <meta name="description" content="Seen in Dubai, treated in Kochi. Transparent packages for common GI surgeries, endoscopy & oncology. WhatsApp our coordinator for costs, insurance guidance, and dates." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Social cards -->
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1600&auto=format&fit=crop" />
-  <meta name="format-detection" content="telephone=no" />
+  <meta property="og:title" content="World‑class GI Surgery in Kerala — Seamless from Dubai" />
+  <meta property="og:description" content="Meet our consultant in Dubai. Procedure in Kochi. Transparent packages. WhatsApp to get a cost breakdown." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1586773860383-dab5f3bc1f5b?q=80&w=1600&auto=format&fit=crop" />
+  <meta property="og:url" content="https://example.com/kerala-surgery" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- SEO additions -->
-  <link rel="canonical" href="https://<your-pages-url>/">
-  <meta property="og:url" content="https://<your-pages-url>/">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Malayali GI Specialist – Karama Dubai | Kochi Surgical Link">
-  <meta name="twitter:description" content="Monthly GI consults in Al Karama. WhatsApp to book. Kochi endoscopy/surgery when needed.">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1600&auto=format&fit=crop">
-  <meta http-equiv="content-language" content="en, ml">
-  <link rel="icon" href="/favicon.ico">
+  <!-- Color + dark friendliness (uses light theme here) -->
+  <meta name="theme-color" content="#1e3c72" />
 
-  <!-- Structured Data: MedicalClinic + Physician -->
+  <style>
+    :root{
+      --brand:#1e3c72;      /* deep blue */
+      --brand-2:#2a5298;     /* blue gradient end */
+      --accent:#ff6b35;      /* orange CTA */
+      --ok:#28a745;          /* success */
+      --danger:#dc3545;      /* red */
+      --bg:#ffffff;          /* page */
+      --ink:#1f2937;         /* text */
+      --muted:#6b7280;       /* secondary text */
+      --card:#ffffff;        /* card */
+      --line:#e5e7eb;        /* borders */
+      --shadow:0 6px 20px rgba(0,0,0,.12);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,system-ui,sans-serif;line-height:1.6;color:var(--ink);background:var(--bg)}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1120px;margin:0 auto;padding:0 20px}
+
+    /* HERO */
+    .hero{background:linear-gradient(135deg,var(--brand) 0%,var(--brand-2) 100%);color:#fff;text-align:center;padding:64px 20px}
+    .hero h1{font-size:clamp(28px,4vw,44px);line-height:1.15;margin:8px 0 12px}
+    .hero p{font-size:clamp(16px,2.1vw,20px);opacity:.95}
+    .actions{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+    .btn{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:14px 22px;font-weight:700;box-shadow:var(--shadow);transition:transform .15s ease, box-shadow .2s ease}
+    .btn:hover{transform:translateY(-2px)}
+    .btn.primary{background:var(--accent);color:#fff}
+    .btn.wa{background:#25D366;color:#0b301a}
+
+    /* SECTIONS */
+    section{padding:56px 0}
+    .title{font-size:clamp(22px,3vw,32px);text-align:center;color:var(--brand)}
+    .muted{color:var(--muted)}
+
+    /* GRID CARDS */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:28px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow)}
+    .card h3{font-size:18px;color:var(--brand);margin-bottom:10px}
+
+    /* TABLE */
+    .table-wrap{max-width:960px;margin:28px auto;border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
+    table{width:100%;border-collapse:collapse;background:#fff}
+    thead th{background:var(--brand);color:#fff;text-align:left;padding:16px;font-weight:700}
+    td{padding:14px 16px;border-bottom:1px solid var(--line)}
+    tr:last-child td{border-bottom:0}
+    .price-dubai{color:var(--danger);font-weight:700}
+    .price-kerala{color:var(--ok);font-weight:700}
+    .savings{background:#d4edda;color:#155724;font-weight:800;text-align:center}
+
+    /* HOW IT WORKS */
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:24px}
+    .step{text-align:center;padding:18px}
+    .bubble{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;margin:0 auto 10px;background:var(--accent);color:#fff;font-weight:800;font-size:20px}
+
+    /* BOOKING */
+    .book{background:#f8f9fa}
+    .form{max-width:640px;margin:26px auto;background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow)}
+    .group{margin-bottom:16px}
+    label{display:block;font-weight:700;color:var(--brand);margin-bottom:6px}
+    input,select,textarea{width:100%;padding:12px;border:1px solid #d1d5db;border-radius:8px;font-size:16px}
+    textarea{min-height:100px;resize:vertical}
+    .small{font-size:12px;color:#6b7280}
+    .submit{background:var(--brand);color:#fff;border:0;border-radius:999px;padding:12px 20px;font-weight:800;cursor:pointer}
+
+    /* FAQ */
+    .faq-item{max-width:820px;margin:0 auto 14px;background:#f8f9fa;border-left:4px solid var(--accent);border-radius:8px;padding:16px}
+
+    /* FOOTER */
+    footer{background:var(--brand);color:#fff;padding:34px 20px;text-align:center}
+    .accent{color:#ffd700;font-weight:800}
+
+    /* FLOATING WA */
+    .float-wa{position:fixed;right:18px;bottom:18px;z-index:50}
+    .float-wa a{display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:#25D366;box-shadow:var(--shadow)}
+    .float-wa svg{width:32px;height:32px;fill:#fff}
+
+    /* RESPONSIVE */
+    @media (max-width: 900px){
+      .grid{grid-template-columns:1fr}
+      .steps{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width: 560px){
+      .steps{grid-template-columns:1fr}
+    }
+
+    /* ACCESSIBILITY */
+    a:focus,button:focus,.submit:focus{outline:2px dashed #ffb199;outline-offset:3px}
+  </style>
+  
+  <!-- Structured Data: Dubai visiting clinic (minimal, non-telemedicine) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"MedicalClinic",
-    "name":"Right Health Family Clinic – Al Karama (GI Specialist Visits)",
+    "name":"Right Health Family Clinic (Visiting GI Consultant)",
     "medicalSpecialty":"Gastroenterology",
-    "address":{"@type":"PostalAddress","addressLocality":"Dubai","addressRegion":"Dubai","addressCountry":"AE"},
+    "address":{"@type":"PostalAddress","addressLocality":"Al Karama","addressRegion":"Dubai","addressCountry":"AE"},
     "areaServed":["Dubai","Sharjah"],
-    "url":"https://<your-pages-url>/",
-    "contactPoint":{"@type":"ContactPoint","contactType":"appointment","telephone":"+971563280583","availableLanguage":["en","ml"]},
-    "physician":{
-      "@type":"Physician",
-      "name":"Gastrointestinal Surgeon (Visiting Consultant)",
-      "medicalSpecialty":"Gastroenterology",
-      "affiliation":{ "@type":"Hospital", "name":"V.G. Saraf Memorial Hospital, Kochi", "address":{"@type":"PostalAddress","addressLocality":"Kochi","addressRegion":"Kerala","addressCountry":"IN"} }
-    }
+    "url":"https://example.com/kerala-surgery",
+    "contactPoint":{"@type":"ContactPoint","contactType":"appointment","telephone":"+971563280583","availableLanguage":["en","ml"]}
   }
   </script>
-
-  <!-- Structured Data: Event (update dates each visit) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Event",
-    "name":"GI Specialist Monthly Clinic – Al Karama",
-    "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
-    "eventStatus":"https://schema.org/EventScheduled",
-    "startDate":"2025-10-28T10:00:00+04:00",
-    "endDate":"2025-10-30T18:00:00+04:00",
-    "location":{ "@type":"Place", "name":"Right Health Family Clinic, Al Karama", "address":{"@type":"PostalAddress","addressLocality":"Dubai","addressCountry":"AE"} },
-    "description":"Malayali GI specialist consults. Cash patients welcome. WhatsApp booking.",
-    "offers":{"@type":"Offer","priceCurrency":"AED","availability":"https://schema.org/InStock"}
-  }
-  </script>
-
-  <!-- Structured Data: FAQPage -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {"@type":"Question","name":"Do you accept cash payments in Karama?","acceptedAnswer":{"@type":"Answer","text":"Yes. Cash consults at Karama clinic with receipt provided."}},
-      {"@type":"Question","name":"Where are procedures done?","acceptedAnswer":{"@type":"Answer","text":"Advanced endoscopy and surgery are coordinated at V.G. Saraf Memorial Hospital, Kochi, after your Dubai consult."}},
-      {"@type":"Question","name":"How do I book?","acceptedAnswer":{"@type":"Answer","text":"Tap the WhatsApp button and send your name and preferred language (Malayalam/English)."}}
-    ]
-  }
-  </script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root { --bg:#0b1220; --card:#0f1a33; --muted:#9fb0d1; --brand:#22c55e; --brand2:#16a34a; } 
-/* Saraf theme (light) */
-
-    *{ box-sizing: border-box; }
-    body{$1color:#e5ecff; line-height:1.5; }
-    a{ color:inherit; text-decoration:none; }
-    .container{ max-width:1040px; margin:0 auto; padding:20px; }
-    header{ display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px 0; }
-    .logo{ display:flex; align-items:center; gap:12px; }
-    .logo-circle{ width:36px; height:36px; border-radius:50%; background:linear-gradient(135deg, var(--brand), var(--brand2)); display:flex; align-items:center; justify-content:center; font-weight:800; color:#0b1220; }
-    .brand{ font-weight:800; letter-spacing:.2px; }
-    .nav a{ opacity:.9; margin-left:16px; font-weight:600; }
-    .hero{ display:grid; grid-template-columns:1.1fr .9fr; gap:24px; padding:28px 0 12px; align-items:center; }
-    .hero h1{ font-size: clamp(28px, 3.6vw, 44px); margin:6px 0 10px; line-height:1.1; }
-    .hero p.lead{ color:var(--muted); margin:0 0 18px; }
-    .card{ background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.08); border-radius:18px; padding:18px; }
-    .cta{ display:inline-flex; align-items:center; gap:10px; font-weight:800; background:linear-gradient(135deg,var(--brand),var(--brand2)); color:#0b1220; padding:14px 18px; border-radius:12px; box-shadow:0 10px 20px rgba(22,163,74,.25); }
-    .cta small{ opacity:.9; font-weight:600; }
-    .pill{ display:inline-block; background:rgba(34,197,94,.12); color:#8ff0b7; border:1px solid rgba(34,197,94,.3); font-weight:700; letter-spacing:.3px; padding:6px 10px; border-radius:999px; font-size:12px; }
-    .grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
-    .grid .card h3{ margin:8px 0 6px; }
-    .muted{ color:#9fb0d1; }
-    .list{ margin:8px 0; padding-left:18px; }
-    .list li{ margin:6px 0; }
-    .section{ padding:28px 0; }
-    .split{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-    footer{ border-top:1px solid var(--border); margin-top:24px; padding:18px 0 40px; font-size:14px; color:var(--muted); }
-    .flag{ font-size:12px; opacity:.9; }
-    .badge{ display:inline-block; background:#0f1a33; border:1px solid rgba(255,255,255,.08); padding:8px 10px; border-radius:10px; font-size:12px; }
-    .lang{ font-size:14px; color:#b9c8e6; }
-    .wbanner{ display:flex; gap:10px; align-items:center; background:rgba(34,197,94,.14); border:1px dashed rgba(34,197,94,.5); padding:10px 12px; border-radius:12px; }
-    .schedule{ display:flex; gap:10px; flex-wrap:wrap; }
-    .schedule .slot{ background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); padding:10px 12px; border-radius:12px; }
-    .accent{ color:#a7f3d0; }
-    @media (max-width: 900px){ .hero{ grid-template-columns:1fr; } .grid{ grid-template-columns:1fr; } .split{ grid-template-columns:1fr; } }
-    /* Accessibility: clear keyboard focus + link affordance */
-    a:focus{ outline:2px dashed #22c55e; outline-offset:3px; }
-    a:hover{ text-decoration: underline; }
-    .cta:hover{ text-decoration:none; filter: brightness(1.05); }
-    .cta:focus{ box-shadow:0 0 0 3px rgba(34,197,94,.35); } .grid{ grid-template-columns:1fr; } .split{ grid-template-columns:1fr; } }
-    html{ background:#0b1220; }
-    body{ background:#0b1220; }
-    @supports (color-scheme: dark){ :root{ color-scheme: dark; } }
-  </style>
-  <!-- Dark-mode browser chrome + color scheme hints -->
-  <meta name="theme-color" content="#0b1220">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b1220">
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#0b1220">
-  <meta name="color-scheme" content="dark">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="logo">
-        <div class="logo-circle">GI</div>
-        <div>
-          <div class="brand">Malayali GI Specialist – Dubai</div>
-          <div class="flag">Al Karama • Dubai | Link to Kochi</div>
-        </div>
+  <!-- HERO -->
+  <header class="hero" role="banner">
+    <div class="container">
+      <h1>Get World‑class GI & Surgical Care in Kerala — Seamless from Dubai</h1>
+      <p>Seen by our consultant in Dubai • Procedure in Kochi • Recover with family</p>
+      <div class="actions" aria-label="primary actions">
+        <a href="#booking" class="btn primary">Check Cost & Book</a>
+        <a id="waTop" class="btn wa" href="https://wa.me/971563280583?text=Hi%2C%20I%27m%20interested%20in%20GI%20surgery%20in%20Kerala" target="_blank" rel="noopener">WhatsApp Us</a>
       </div>
-      <nav class="nav">
-        <a href="#book">Book</a>
-        <a href="#services">Services</a>
-        <a href="#why">Why Kochi</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-    </header>
+    </div>
+  </header>
 
-    <section class="hero">
-      <div>
-        <span class="pill">Monthly Consults • Cash Patients Welcome</span>
-        <h1>Malayali Gastroenterologist in <span class="accent">Al Karama, Dubai</span> — WhatsApp to book. Seamless endoscopy & surgery in Kochi if needed.</h1>
-        <p class="lead">Malayalam / English • Evidence‑based GI care for acidity, IBS, piles, gallbladder, liver, GI cancers. Seen at <strong>Right Health Family Clinic, Al Karama</strong>. Advanced procedures coordinated at our base hospital in Kochi.</p>
-        <div class="wbanner" id="book">
-          <div>✅ Fastest: WhatsApp booking</div>
-          <a class="cta" id="wa-cta" href="https://wa.me/971563280583?text=Hi%20Doctor%2C%20I%20want%20to%20book%20a%20GI%20consult%20in%20Al%20Karama.%20I%20saw%20your%20Dubai%20micro‑site.%20Name%3A%20%5BYour%20Name%5D%20%7C%20Language%3A%20Malayalam%2FEnglish" target="_blank" rel="noopener">💬 WhatsApp <small>(Dubai/Sharjah)</small></a>
-        </div>
-        <p class="muted lang" lang="ml">മലയാളം സംസാരിക്കാം • WhatsApp വഴി സമയം ബുക്ക് ചെയ്യാം.</p>
-        <div class="schedule">
-          <div class="slot">Next Visit: <strong><span id="next-visit">Oct 28–30, 2025 • Fri–Sun • 10:00–18:00 GST</span></strong></div>
-          <div class="slot">Location: <strong>Right Health Family Clinic, Al Karama</strong></div>
-          <div class="slot">Consult Type: <strong>Cash • Receipt Provided</strong></div>
-        </div>
+  <!-- PROBLEMS -->
+  <section class="problems" aria-labelledby="why-kerala">
+    <div class="container">
+      <h2 id="why-kerala" class="title">Why UAE Expats Choose Kerala for Surgery</h2>
+      <div class="grid" style="margin-top:18px">
+        <article class="card"><h3>💰 Dubai costs are high</h3><p>Similar‑quality care can be significantly cheaper in Kerala with transparent estimates.</p></article>
+        <article class="card"><h3>🧾 Insurance confusion</h3><p>Policies sometimes cover planned care in India. We help verify eligibility and paperwork.</p></article>
+        <article class="card"><h3>👨‍👩‍👧‍👦 Family‑supported recovery</h3><p>Recover near family with coordinated follow‑ups and fit‑to‑fly clearance before travel.</p></article>
       </div>
-      <div>
-        <div class="card">
-          <h3>Top Symptoms We Treat</h3>
-          <ul class="list">
-            <li>Acidity / GERD, gastritis, ulcers</li>
-            <li>Irritable bowel, constipation/diarrhoea, bloating</li>
-            <li>Piles, fissure, fistula</li>
-            <li>Gallbladder stones, hernia</li>
-            <li>Fatty liver, hepatitis, pancreatitis</li>
-            <li>GI cancers – evaluation & second opinion</li>
-          </ul>
-          <p class="muted">If tests/procedures are needed (endoscopy, ERCP, surgery), we coordinate fast‑track care in Kochi.</p>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section" id="services">
+  <!-- COST COMPARISON (illustrative) -->
+  <section aria-labelledby="pricing" class="cost">
+    <div class="container">
+      <h2 id="pricing" class="title">Illustrative Pricing — Dubai vs Kerala</h2>
+      <p class="muted" style="text-align:center;margin-top:4px">Ranges vary by case complexity and co‑morbidities. We share a written estimate before booking.</p>
+      <div class="table-wrap" role="region" aria-label="cost comparison table">
+        <table>
+          <thead><tr><th>Item</th><th>Dubai</th><th>Kerala package</th></tr></thead>
+          <tbody>
+            <tr><td>Surgery + Anaesthesia</td><td class="price-dubai">High range</td><td class="price-kerala">Lower range</td></tr>
+            <tr><td>Hospital stay</td><td class="price-dubai">Higher daily rates</td><td class="price-kerala">Bundled packages</td></tr>
+            <tr><td>Tests + Medicines</td><td class="price-dubai">Higher OOP costs</td><td class="price-kerala">Included/discounted</td></tr>
+            <tr class="savings"><td colspan="3">Save substantially vs comparable UAE care</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section aria-labelledby="services">
+    <div class="container">
+      <h2 id="services" class="title">Comprehensive Care Under One Roof</h2>
       <div class="grid">
-        <div class="card">
-          <h3>Dubai Consults (Al Karama)</h3>
-          <p class="muted">Focused GI consults, medication plans, and only the essential tests. Cash friendly pricing.</p>
-          <span class="badge">Malayalam • English</span>
-        </div>
-        <div class="card">
-          <h3>Endoscopy / ERCP / Surgery (Kochi)</h3>
-          <p class="muted">Seamless handover to our Kochi team for advanced procedures. Airport pickup coordination available.</p>
-          <span class="badge">Transparent estimates</span>
-        </div>
-        <div class="card">
-          <h3>WhatsApp Care Continuity</h3>
-          <p class="muted">Get your visit summary, instructions, and follow‑ups on WhatsApp with consent.</p>
-          <span class="badge">Opt‑in privacy</span>
-        </div>
+        <div class="card"><h3>🔬 GI Surgery</h3><ul class="muted"><li>Laparoscopic gallbladder</li><li>Hernia repair</li><li>Appendectomy</li><li>Colorectal</li><li>Complex GI</li><li>Bariatric</li></ul></div>
+        <div class="card"><h3>🩺 Medical Gastro</h3><ul class="muted"><li>Upper GI endoscopy</li><li>Colonoscopy</li><li>ERCP</li><li>Liver clinics</li><li>IBD care</li></ul></div>
+        <div class="card"><h3>🎗️ Oncology</h3><ul class="muted"><li>GI cancer surgery</li><li>Chemo (with partners)</li><li>Multidisciplinary board</li></ul></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section split" id="why">
-      <div class="card">
-        <h3>Why this model works</h3>
-        <ul class="list">
-          <li><strong>Specialist access in Dubai</strong> for initial evaluation and medical management.</li>
-          <li><strong>Cost‑effective procedures in Kochi</strong> when indicated, without compromising quality.</li>
-          <li><strong>One team, two locations</strong>—your records and plan travel with you.</li>
-        </ul>
+  <!-- HOW IT WORKS -->
+  <section class="how" aria-labelledby="how">
+    <div class="container">
+      <h2 id="how" class="title">Dubai → Kochi in 4 Steps</h2>
+      <div class="steps">
+        <div class="step"><div class="bubble">1</div><h3>Meet in Dubai</h3><p>Consult with our visiting specialist for diagnosis & plan.</p></div>
+        <div class="step"><div class="bubble">2</div><h3>Coordination</h3><p>Written estimate, insurance verification, OT & travel scheduling.</p></div>
+        <div class="step"><div class="bubble">3</div><h3>Procedure in Kochi</h3><p>NABH‑accredited care, monitored recovery, family nearby.</p></div>
+        <div class="step"><div class="bubble">4</div><h3>Follow‑up</h3><p>Fit‑to‑fly clearance, Day 14/30 tele‑reviews, WhatsApp help.</p></div>
       </div>
-      <div class="card">
-        <h3 id="ml-head" lang="ml">മലയാളത്തിൽ</h3>
-        <p lang="ml">ദുബൈയിലെ <strong>Al Karama</strong>യിൽ മാസത്തിൽ ഒരിക്കൽ കണ്ടുമുട്ടാം. പരിശോധനകൾ/ശസ്ത്രക്രിയ ആവശ്യമായാൽ <strong>കൊച്ചി</strong>യിൽ വേഗത്തിൽ ക്രമപ്പെടുത്താം. WhatsApp വഴി സമയം ബുക്ക് ചെയ്യാം.</p>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section" id="faq">
-      <div class="grid">
-        <div class="card">
-          <h3>Fees / Payment</h3>
-          <p class="muted">Cash consults at Karama clinic. Receipts provided. For Kochi procedures, you receive written estimates in advance.</p>
+  <!-- DUBAI CLINIC LOCATION -->
+  <section id="dubai" aria-labelledby="dubai-loc">
+    <div class="container">
+      <h2 id="dubai-loc" class="title">Dubai Consult Location — Right Health Family Clinic, Al Karama</h2>
+      <p class="muted" style="text-align:center;margin-top:6px">Monthly visiting specialist clinics. Message on WhatsApp for the next available dates and slots.</p>
+      <div class="grid" style="margin-top:22px">
+        <div class="card" style="grid-column: span 2">
+          <h3 style="margin-bottom:8px;color:var(--brand)">Clinic Details</h3>
+          <p><strong>Right Health Family Clinic</strong><br>Al Karama, Dubai, UAE</p>
+          <p class="muted" style="margin-top:6px">Booking & coordination via WhatsApp only. Walk‑ins not guaranteed during visiting hours.</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+            <a class="btn wa" href="https://wa.me/971563280583?text=Hi%2C%20please%20share%20the%20next%20Right%20Health%20Family%20Clinic%20%28Karama%29%20visit%20dates" target="_blank" rel="noopener">Ask Dates on WhatsApp</a>
+            <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=Right+Health+Family+Clinic+Al+Karama+Dubai" target="_blank" rel="noopener">Open in Google Maps</a>
+          </div>
+          <p class="small" style="margin-top:10px">Note: In‑person consultations occur in Dubai. Advanced procedures are coordinated at V.G. Saraf Memorial Hospital, Kochi.</p>
         </div>
-        <div class="card">
-          <h3>Travel & Scheduling</h3>
-          <p class="muted">We batch Kochi procedures to minimise your stay. Help with flights & local transport on request.</p>
-        </div>
-        <div class="card">
-          <h3>Privacy</h3>
-          <p class="muted">We use WhatsApp only with your consent. Do not share sensitive details until we confirm a private chat. By messaging us, you agree to our basic privacy note below.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section card">
-      <h3>Book on WhatsApp</h3>
-      <p class="muted">Send your name and preferred language. We’ll reply with available Karama slots.</p>
-      <a class="cta" href="https://wa.me/971563280583?text=Hi%20Doctor%2C%20I%20want%20to%20book%20a%20GI%20consult%20in%20Al%20Karama." target="_blank" rel="noopener">💬 Tap to WhatsApp</a>
-      <p class="muted" style="margin-top:8px;">Or scan the QR in our Instagram bio stories.</p>
-    </section>
-
-    <footer>
-      <div class="split">
-        <div>
-          <div><strong>Right Health Family Clinic, Al Karama, Dubai</strong> • Monthly Consultant Gastroenterologist visits</div>
-          <div>Downstream procedures at <strong>V.G. Saraf Memorial Hospital, Kochi</strong>.</div>
-          <div style="margin-top:8px;">Instagram: <a href="https://instagram.com/vgsarafhospital" target="_blank" rel="noopener">@vgsarafhospital</a></div>
-        </div>
-        <div>
-          <div><strong>Basic Privacy Note</strong></div>
-          <div>By contacting us on WhatsApp, you consent to us replying and saving your chat for care coordination. We avoid sharing sensitive medical data on WhatsApp unless you explicitly agree.</div>
+        <div class="card" style="padding:0;overflow:hidden">
+          <iframe title="Map to Right Health Family Clinic, Al Karama" width="100%" height="280" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyDUMMYKEY&q=Right+Health+Family+Clinic+Al+Karama+Dubai"></iframe>
+          <div class="small muted" style="padding:10px 12px">Map is for orientation only; confirm exact location via WhatsApp.</div>
         </div>
       </div>
-      <div style="margin-top:14px;">© <span id="year"></span> GI Dubai–Kochi Care Link</div>
-    </footer>
+    </div>
+  </section>
+
+  <!-- BOOKING (WhatsApp-first: form → wa.me) -->
+  <section id="booking" class="book" aria-labelledby="book">
+    <div class="container">
+      <h2 id="book" class="title">Check Cost & Book</h2>
+      <p class="muted" style="text-align:center;margin-top:6px">Share a few details; we’ll reply on WhatsApp with a breakdown and dates.</p>
+      <form id="bookingForm" class="form" novalidate>
+        <div class="group"><label for="name">Full name *</label><input id="name" required autocomplete="name" /></div>
+        <div class="group"><label for="phone">WhatsApp number (with country code) *</label><input id="phone" required placeholder="+971 56 328 0583" inputmode="tel" /></div>
+        <div class="group"><label for="email">Email (optional)</label><input id="email" type="email" autocomplete="email" /></div>
+        <div class="group"><label for="condition">Condition *</label>
+          <select id="condition" required>
+            <option value="">Select…</option>
+            <option>Gallbladder / Gallstones</option>
+            <option>Hernia</option>
+            <option>Appendicitis</option>
+            <option>Colorectal</option>
+            <option>Fatty liver</option>
+            <option>GI cancer</option>
+            <option>Endoscopy / Colonoscopy</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="group"><label for="timeline">When are you planning?</label>
+          <select id="timeline"><option value="">Select…</option><option>ASAP</option><option>1–3 months</option><option>3–6 months</option><option>Just exploring</option></select>
+        </div>
+        <div class="group"><label for="msg">Additional details (optional)</label><textarea id="msg" placeholder="Any key reports, allergies, co‑morbidities"></textarea></div>
+        <p class="small">₹25,000 booking deposit to block OT. Fully refundable up to 14 days before procedure (admin rules apply).</p>
+        <button class="submit" type="submit">Send via WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" aria-labelledby="faq">
+    <div class="container">
+      <h2 id="faq" class="title">Frequently Asked Questions</h2>
+      <div class="faq-item"><h3>Does UAE insurance cover surgery in India?</h3><p>Some policies do. We verify benefits and assist with paperwork. Coverage depends on your plan/TPA.</p></div>
+      <div class="faq-item"><h3>How long must I stay in Kerala?</h3><p>Typical surgical stays and recovery checks require ~10 days; exact duration varies by procedure and recovery.</p></div>
+      <div class="faq-item"><h3>What about complications after return?</h3><p>We schedule tele‑follow‑ups and share a care summary with your Dubai GP on request. Emergency concerns must use local emergency services.</p></div>
+      <div class="faq-item"><h3>Is the hospital accredited?</h3><p>Yes—NABH accreditation; modern OT, ICU, CT/USG/X‑ray, and 24/7 labs.</p></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container" style="text-align:center">
+      <h3>V.G. Saraf Memorial Hospital, Kochi</h3>
+      <div class="accent">NABH Accredited • Established 1999</div>
+      <p>Kanayannur, Kerala 682301, India</p>
+      <p>Email: info@sarafhospital.in • Phone: <a href="tel:+914844234500" style="color:#fff;text-decoration:underline">0484-4234500</a></p>
+      <p class="muted" style="margin-top:10px">For Dubai consultations: WhatsApp for next visit dates.</p>
+      <p style="opacity:.7;margin-top:16px;font-size:12px">© <span id="year"></span> V.G. Saraf Memorial Hospital. All rights reserved. | <a href="#" style="color:#fff">Privacy</a></p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <div class="float-wa" aria-hidden="false">
+    <a id="waFloat" href="https://wa.me/971563280583?text=Hi%2C%20I%27d%20like%20a%20cost%20estimate" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32 101.5 32 1.9 131.6 1.9 254c0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27 122.4 0 222-99.6 222-222 0-59.3-23.1-115.1-65.1-157zm-157 318.7c-31.3 0-61.9-8.4-88.5-24.4l-6.3-3.7-65.5 17.2 17.5-63.9-4.1-6.6c-17.2-27.9-26.3-60-26.3-93 0-97 79-176 176.1-176 47 0 91.2 18.3 124.4 51.5s51.5 77.4 51.5 124.5c.1 97.1-79 176.4-176.3 176.4zm101.3-132.3c-5.5-2.8-32.5-16-37.6-17.8-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 17.8-17.6 21.5c-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66.1-5.7-9.8 5.7-9.1 16.3-30.2 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.5-19.5 19.1-19.5 46.6s20 54 22.8 57.8c2.8 3.7 38.6 59 93.7 83.1 13.1 5.6 23.3 8.9 31.3 11.4 13.2 4.2 25.2 3.6 34.7 2.2 10.6-1.6 32.5-13.3 37.1-26.2 4.6-12.9 4.6-24 3.2-26.2-1.3-2.5-5-3.9-10.5-6.7z"/></svg>
+    </a>
   </div>
 
   <script>
-    // Apply Saraf light theme by default
-    // Auto-year
+    // Year stamp
     document.getElementById('year').textContent = new Date().getFullYear();
-    // UTM tagging for WhatsApp
-    const wa = document.getElementById('wa-cta');
-    const params = new URLSearchParams({ utm_source: 'microsite', utm_medium: 'bio', utm_campaign: 'dubai_karama_gi' });
-    if (wa) wa.href += `&${params.toString()}`;
+
+    // WhatsApp UTM tagging + Form → WhatsApp conversion
+    const base = 'https://wa.me/971563280583';
+    const utm = 'utm_source=landing&utm_medium=cta&utm_campaign=dubai_kerala_gi';
+    function withMsg(msg){
+      const text = encodeURIComponent(msg);
+      return `${base}?text=${text}&${utm}`;
+    }
+    // Top & float buttons already have hard links; ensure UTM present
+    const waTop = document.getElementById('waTop');
+    const waFloat = document.getElementById('waFloat');
+    if(waTop) waTop.href = withMsg("Hi, I'm interested in GI/surgical care in Kerala. Please share estimate & next Dubai dates.");
+    if(waFloat) waFloat.href = withMsg("Hi, I'd like a cost estimate.");
+
+    // Form → WhatsApp
+    const f = document.getElementById('bookingForm');
+    if(f){
+      f.addEventListener('submit', function(e){
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const condition = document.getElementById('condition').value;
+        const timeline = document.getElementById('timeline').value;
+        const msg = document.getElementById('msg').value.trim();
+        if(!name || !phone || !condition){
+          alert('Please complete required fields (name, WhatsApp, condition).');
+          return;
+        }
+        const payload = `Name: ${name}\nWhatsApp: ${phone}\nEmail: ${email || '-'}\nCondition: ${condition}\nTimeline: ${timeline || '-'}\nNotes: ${msg || '-'}\nSource: Landing page`;
+        window.location.href = withMsg(payload);
+      });
+    }
   </script>
 </body>
 </html>
